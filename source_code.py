@@ -21,7 +21,7 @@ config = Configurations(configurationsFilePathName)
 
 # create market data based on configuration
 market = pandas.read_csv(config['MarketData'])
-print('2Y EUR swap rate:')
+print('EUR swap curve:')
 print(market.head())
 
 # create fixings data based on configuration
